@@ -5,6 +5,10 @@ mcferren@seasidesyndication.com
 
 Backbone app to demonstrate front end mvc skills
 
+npm install
+bower install
+grunt serve
+
 Challenge 1
 The Sign up
 
