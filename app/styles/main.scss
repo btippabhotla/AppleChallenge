@@ -1,0 +1,193 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import 'bootstrap-sass-official/assets/stylesheets/bootstrap.scss';
+
+
+
+/***************************************/
+/************ OUTER CHROME *************/
+/***************************************/
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+    width: 40%;
+    cursor:pointer; 
+}
+
+
+
+/***************************************/
+/************ GENERAL RULES ************/
+/***************************************/
+
+.spec object embed { border: solid 1px #ccc; }
+.correct { color:green; }
+.incorrect { color:red; }
+
+
+
+/***************************************/
+/************ CHALLENGE ONE ************/
+/***************************************/
+
+.selected { background-color: yellow }
+
+.reponse-message { 
+    li:first-child { 
+        text-decoration:underline;
+        list-style-type:none;
+        font-weight:bold;
+    } 
+}
+
+
+
+/***************************************/
+/************ CHALLENGE TWO ************/
+/***************************************/
+
+.table-heading {
+    margin:10px 0;
+    ul {
+        margin-top:10px;
+        padding-left:63px;
+    }
+    font-weight:bold;
+    li { 
+        width: 23.3%; 
+        display: inline-block;
+        list-style-type: none;
+        font-weight:bold;
+        em { 
+            cursor:pointer; 
+            font-style:normal;
+            &:hover { text-decoration:underline; }
+        }
+    }
+    #add-person {  
+        font-size: 18px;
+        text-align: right;
+        width: 2.5%;
+        padding-right: 2px;
+        cursor:pointer;
+    }
+    >div { margin:0; }
+}
+
+.panel-heading {
+    ul { 
+        margin-top:10px;
+    }
+    li { 
+        display: inline-block;
+        list-style-type: none;
+        width: 23%; 
+    }
+    .delete-person {
+        font-size:13px;
+        text-align:right;
+        width:2%;
+    }
+}
+
+.panel-body {
+    margin-top:3px;
+    border-bottom:solid 1px #ccc;
+    em {
+        font-weight:bold;
+        font-style:normal;
+        text-decoration:underline;
+        display:block;
+    }
+    li { margin-bottom:5px; }
+}
+
+
+
+/***************************************/
+/************ MODAL COMPONENT **********/
+/***************************************/
+
+.ui-dialog-content {
+    p { font-size: 10px; }
+    input { float:right; }
+    li { 
+        margin-bottom: 10px; 
+        list-style-type: none;
+        &:last-child { margin-top:10px;}
+    }
+    .required:before { content: "*" }
+    #birthday { 
+        width: 190px;
+        height: 27px;
+   }
+   textarea {
+        width: 322px;
+   }
+}
+
+.ui-sortable-placeholder {
+    border: 3px dashed #aaa;
+    height: 45px;
+    background: #ccc;
+}
+
+
+
+/***************************************/
+/************ CHALLENGE THREE **********/
+/***************************************/
+
+#chal-three .container { 
+    width:40%; 
+    float:left;
+    .stepthree {
+        label, input { cursor:pointer; }
+    }
+}
+
+.summary-block { 
+    float:right;
+    width: 55%;
+    em { font-weight:bold; }
+    span, h4 em { cursor:pointer; }
+    span, ul { float:right; }
+    h4 em { display:none; }
+    #summary { 
+        overflow:auto; 
+        ul { float:left; }
+    }
+}
+
+
+
+/***************************************/
+/* Responsive: Portrait tablets and up */
+/***************************************/
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 730px;
+    }
+
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+}

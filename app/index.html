@@ -1,0 +1,67 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>McFerren Backbone Practice</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="AppContainer"></div>
+
+
+
+        <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/handlebars/handlebars.min.js"></script>
+        <script src="bower_components/mustache/mustache.min.js"></script>
+        <script src="bower_components/underscore/underscore-min.js"></script>
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+        <script src="bower_components/backbone/backbone.js"></script>
+        <!-- endbuild -->
+
+
+        <!-- build:js scripts/plugins.js -->
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/templates.js"></script>
+
+        <script src="scripts/models/signupModel.js"></script>
+        <script src="scripts/models/personModel.js"></script>
+        <script src="scripts/models/wizardModel.js"></script>
+        <script src="scripts/models/interestModel.js"></script>
+        
+        <script src="scripts/collections/peopleCollection.js"></script>
+        <script src="scripts/collections/interestListCollection.js"></script>
+
+        <script src="scripts/views/ContainerView.js"></script>
+        <script src="scripts/views/Challenge_one.js"></script>
+        <script src="scripts/views/Challenge_two.js"></script>
+        <script src="scripts/views/Challenge_two/DialogView.js"></script>
+        <script src="scripts/views/Challenge_two/accordionView.js"></script>
+        <script src="scripts/views/Challenge_three.js"></script>
+        <script src="scripts/views/Challenge_three_steps/summaryBlockView.js"></script>
+        <script src="scripts/views/Challenge_three_steps/stepOneView.js"></script>
+        <script src="scripts/views/Challenge_three_steps/stepTwoView.js"></script>
+        <script src="scripts/views/Challenge_three_steps/stepThreeView.js"></script>
+        <script src="scripts/views/Challenge_three_steps/stepFourView.js"></script>
+        
+        <script src="scripts/routes/appRouter.js"></script>
+        <!-- endbuild -->
+</body>
+</html>

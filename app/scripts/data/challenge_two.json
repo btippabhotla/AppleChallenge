@@ -1,0 +1,75 @@
+{
+   "people":[
+      {
+         "username"  : "bmcferren",
+         "first"     : "Benjamin",
+         "last"      : "McFerren",
+         "status"    : "Available",
+         "email"     : "mcferren@seasidesyndication.com",
+         "birthday"  : "1980-01-29T08:00:00.000Z",
+         "bio"       : "Lacus augue ultrices, aliquet, aliquam phasellus, placerat magna magna risus tempor ut! Pulvinar porta porta hac adipiscing. Placerat. Odio amet. Phasellus, ut penatibus sagittis",
+         "login"     : "2015-06-02T08:00:00.000Z",
+         "l_onstage" : false
+      }, {
+         "username"  : "acutch",
+         "first"     : "Andrew",
+         "last"      : "McCutchen",
+         "status"    : "Offline",
+         "email"     : "acutch@apple.com",
+         "birthday"  : "1984-02-14T08:00:00.000Z",
+         "bio"       : "Sociis cras ultrices mid nisi eu adipiscing rhoncus, massa integer velit, urna augue a, mid? Nec? Dignissim et, sit mid. Nec elementum proin amet pulvinar. Urna quis, lorem eros et in platea",
+         "login"     : "2015-06-02T07:00:00.000Z",
+         "l_onstage" : true
+      }, {
+         "username"  : "nwalker",
+         "first"     : "Neil",
+         "last"      : "Walker",
+         "status"    : "Available",
+         "email"     : "nwalker@apple.com",
+         "birthday"  : "1982-03-07T08:00:00.000Z",
+         "bio"       : "Pellentesque adipiscing cras diam, aliquam placerat, habitasse aliquam ridiculus hac scelerisque! Augue? Parturient arcu, ultrices massa ridiculus sit urna cum egestas placerat, nisi urna sociis, rhoncus",
+         "login"     : "2015-06-01T06:00:00.000Z",
+         "l_onstage" : false
+      }, {
+         "username"  : "churdle",
+         "first"     : "Clint",
+         "last"      : "Hurdle",
+         "status"    : "Idle",
+         "email"     : "churdle@apple.com",
+         "birthday"  : "1985-03-29T08:00:00.000Z",
+         "bio"       : "Proin turpis a, tristique turpis turpis in! Pid penatibus, elit nec facilisis etiam. Magna et. Etiam vut cras? Pid urna egestas, augue ultricies rhoncus porta facilisis vut magna, dignissim! Amet urna nascetur",
+         "login"     : "2015-05-30T07:00:00.000Z",
+         "l_onstage" : false
+      }, {
+         "username"  : "jtabata",
+         "first"     : "Jose",
+         "last"      : "Tabata",
+         "status"    : "Busy",
+         "email"     : "jtabata@apple.com",
+         "birthday"  : "1985-07-16T07:00:00.000Z",
+         "bio"       : "Ultrices magna, ac facilisis tortor amet elementum mid, tempor massa porttitor nisi lorem, auctor, sed rhoncus a placerat! Aenean velit mauris risus! Et? Amet tortor facilisis elementum scelerisque aenean nisi porttitor aenean",
+         "login"     : "2015-05-29T05:00:00.000Z",
+         "l_onstage" : false
+      }, {
+         "username"  : "gcole",
+         "first"     : "Garret",
+         "last"      : "Cole",
+         "status"    : "Offline",
+         "email"     : "gcole@apple.com",
+         "birthday"  : "1987-01-16T08:00:00.000Z",
+         "bio"       : "Nascetur cursus diam etiam, dolor nisi rhoncus proin vut rhoncus nisi amet? Dapibus, rhoncus! A odio! Ac odio, odio pellentesque in lundium, dolor porta augue a! Eros scelerisque",
+         "login"     : "2015-06-01T08:00:00.000Z",
+         "l_onstage" : true
+      }, {
+         "username"  : "aburnett",
+         "first"     : "AJ",
+         "last"      : "Burnett",
+         "status"    : "Available",
+         "email"     : "aburnett",
+         "birthday"  : "1983-07-10T08:00:00.000Z",
+         "bio"       : "Et tempor in integer, amet tortor, vut nascetur a, amet lorem mauris platea odio eu ut integer lundium. Proin enim, eu enim mattis natoque! Etiam placerat lectus",
+         "login"     : "2015-06-02T07:00:00.000Z",
+         "l_onstage" : false
+      }
+   ]
+}

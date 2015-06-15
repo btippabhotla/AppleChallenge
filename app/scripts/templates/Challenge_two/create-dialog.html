@@ -1,0 +1,77 @@
+<div id="dialog-form" 
+	 title="Create New User">
+
+	<p class="validateTips">All form fields are required.</p>
+	<div id="statusmessage"></div>
+	<form>
+		<fieldset>
+			<ul>
+				<li class="required">
+					<label for="username">Username</label>
+					<input type="text" 
+						   name="username" 
+						   id="username" 
+						   class="text ui-widget-content ui-corner-all">
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS   
+						   title="Username input is required"
+						   required -->
+				</li>
+				<li class="required">
+					<label for="first">First Name</label>
+					<input type="text" 
+						   name="first" 
+						   id="first"  
+						   class="text ui-widget-content ui-corner-all">
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS   
+						   title="First Name input is required"
+						   required -->
+				</li>
+				<li class="required">
+					<label for="last">Last Name</label>
+					<input type="text" 
+						   name="last" 
+						   id="last" 
+						   class="text ui-widget-content ui-corner-all">
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS   
+						   title="Last Name input is required"
+						   required -->
+				</li>
+				<li class="required">
+					<label for="email">Email</label>
+					<input type="email" 
+						   name="email" 
+						   id="email" 
+						   class="text ui-widget-content ui-corner-all">
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS     
+						   title="Email input is required"
+						   required -->
+				</li>
+				<li class="required">
+					<label for="birthday">Birthday</label>
+					<input type="date" 
+						   name="birthday" 
+						   id="birthday" 
+						   class="text ui-widget-content ui-corner-all">
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS     
+						   title="Birthday input is required"
+						   required -->
+				</li>
+				<li class="required">
+					<label for="bio">Bio</label>
+					<textarea rows="4" 
+							  name="bio" 
+							  id="bio" 
+							  class="text ui-widget-content ui-corner-all"></textarea>
+<!-- SAFARI ISSUES WITH HTML5 INPUT VALIDATORS     
+							  title="Bio input is required"
+					   	      required -->
+				</li>
+				<li>
+					<input type="submit" 
+						   tabindex="-1" 
+						   style="position:absolute; top:-1000px">
+				</li>
+			</ul>
+		</fieldset>
+	</form>
+</div>

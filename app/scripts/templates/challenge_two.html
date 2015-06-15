@@ -1,0 +1,75 @@
+<div class="table-heading row">
+	<div class="well well-sm">
+		<ul>
+		  <li><em sort="username">username</em></li>
+		  <li><em sort="first">first name</em></li>
+		  <li><em sort="last">last name</em></li>
+		  <li><em sort="status">status</em></li>
+		  <li id="add-person">+</li>
+		</ul>
+	</div>
+</div>
+<div id="accordion">
+	{{#torender_peoplelist}}
+		<div class="group">
+			<h3 class="panel-heading accordion-handle">
+				<ul>
+				  <li>{{username}}</li>
+				  <li>{{first}}</li>
+				  <li>{{last}}</li>
+				  <li>{{status}}</li>
+				  <li class="delete-person">X</li>
+				</ul>
+			</h3>
+			<div class="panel-body">
+				<ul>
+				  <li><em>email address</em> {{email}}</li>
+				  <li><em>birthday</em> {{birthday}}</li>
+				  <li><em>bio</em> {{bio}}</li>
+				  {{#l_onstage}} <!-- NOT VISIBLE ON FALSE l_onstage VALUE -->
+						<li><em>last login</em> {{login}}</li>
+				  {{/l_onstage}}
+				</ul>
+			</div>
+		</div>
+	{{/torender_peoplelist}}  
+</div>
+<div id="dialogmodal"></div>
+
+<script>
+
+	$('#accordion').accordion({ 
+	    header          : ".accordion-handle",
+	    active          : false,
+	    collapsible     : true,
+	    beforeActivate  : function( event, ui ) {
+
+	        if( $(event.originalEvent.target).hasClass('delete-person') ) { 
+
+	            event.preventDefault(); 
+	            $( this ).accordion( "disable" );
+	        }
+	    }
+	})
+	.sortable({ 
+	    placeholder : "ui-sortable-placeholder",
+	    axis        : "y",
+	    start       : function (event, ui) {
+
+	                    // BINDING ATTR TO DRAGGED ELEMENT AS A MANNER TO PASS STARTING INDEX
+	                    $(ui.item).attr("startindex", ui.item.index()); 
+	    },
+	    stop        : function( event, ui ) {
+	                    // IE doesn't register the blur when sorting
+	                    // so trigger focusout handlers to remove .ui-state-focus
+	                    ui.item.children( ".accordion-handle" ).triggerHandler( "focusout" );
+
+	                    // THE STOP EVENT IS BOUND TO A FUNCTION THAT TRIGGERS DROP ON THE DOM NODE WITH INDEX ARG
+	                    ui.item.trigger('drop', ui.item.index());
+
+	                    // REFRESH ACCORDIAN TO HANDLE NEW ORDER
+	                    $( this ).accordion( "refresh" );
+	    }
+	});
+
+</script>

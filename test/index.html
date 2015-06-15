@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="bower_components/mocha/mocha.css">
+</head>
+<body>
+    <div id="mocha"></div>
+    <script src="bower_components/mocha/mocha.js"></script>
+    <script>mocha.setup('bdd')</script>
+    <script src="bower_components/chai/chai.js"></script>
+    <script>
+        var assert = chai.assert;
+        var expect = chai.expect;
+        var should = chai.should();
+    </script>
+
+    <!-- include source files here... -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/templates.js"></script>
+
+    <script src="views/Challenge_one.js"></script>
+    <script src="views/Challenge_two.js"></script>
+    <script src="views/Challenge_three.js"></script>
+    <script src="views/ContainerView.js"></script>
+    <script src="views/stepOneView.js"></script>
+    <script src="views/stepTwoView.js"></script>
+    <script src="views/stepThreeView.js"></script>
+    <script src="views/stepFourView.js"></script>
+    <script src="views/summaryBlockView.js"></script>
+    <script src="views/dialogView.js"></script>
+    <script src="views/accordionView.js"></script>
+
+    <script src="scripts/models/signupModel.js"></script>
+    <script src="scripts/models/personModel.js"></script>
+    <script src="scripts/models/wizardModel.js"></script>
+    <script src="scripts/models/interestModel.js"></script>
+    
+    <script src="scripts/collections/peopleCollection.js"></script>
+    <script src="scripts/collections/interestListCollection.js"></script>
+
+    <script src="routers/appRouter.js"></script>
+    <!-- include spec files here... -->
+    <script src="spec/test.js"></script>
+    <script src="spec/interestModel.spec.js"></script>
+    <script src="spec/personModel.spec.js"></script>
+    <script src="spec/signupModel.spec.js"></script>
+    <script src="spec/wizardModel.spec.js"></script>
+
+    <script>mocha.run()</script>
+</body>
+</html>
